@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  
+    Document Title
+    =============================================
+    -->
+    <title>Endless Tone</title>
+    <!--  
+    Stylesheets
+    =============================================
+    
+    -->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+          <div class="alert alert-success" role="alert">
+              <button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button><i class="fa fa-cog fa-spin"></i><strong>Alert!</strong> Limited time deal on all data analytics statistics. <a href="mailto:support@endlesstone.com">support@endlesstone.com</a>.
+          </div>
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Endless Tone</a>
+          </div>
+        </div>
+      </nav>
+      <div class="main documentation-page">
+        <section class="module bg-dark-60 about-page-header" data-background="assets/images/about_bg.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">The Endless Tone Project</h2>
+                <div class="module-subtitle font-serif">Endless Tone is focused on music-related product aggregation.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module-medium" id="aggregation">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Aggregation</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <p>We use MongoDB with a distributed, RESTful search and analytics engine for product aggregation and querying. We allow for robust filtering using TypeScript: </p>
+                <pre class="prettyprint lang-basic">
+function ($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.when('/products/','/products');
+  $stateProvider
+    .state('main.products', {
+      url: '/products' +
+      '?hand' +
+      '?price' +
+      '?make' +
+      '?query' +
+      '?sortBy' +
+      '?sortType' +
+      '?similar'+
+      '?subCategory',
+      templateUrl: 'app/modules/products/list/product.list.html',
+      controller: 'ProductsController as productsCtrl',
+    })
+    .state('main.details', {
+      url: '/details/:guitarId',
+      templateUrl: 'app/modules/products/details/product.details.html',
+      controller: 'ProductDetailsController as productDetailsCtrl'
+    });
+}</pre>
+                
+            <br/> <h4>For the customer, this resulted in:</h4>
+            <br/> <p>// Pretty pictures here</p>
+            
+
+            <br/> <br/> <p>Ultimately, we were able to provide users with:</p>   
+                <ul>
+                  <li>Robust matching capabilities amongst <strong>nine (9)</strong> different instrument categories.</li>
+                  <li>Pricing for <strong>four (Amazon, Guitar Center, Sam Ash, Reverb)</strong> major new and used retailers.</li>
+                  <li>Product description, specificatoin, and studio-quality images for <strong>fifteen (15)</strong> unique manufacturers.</li>
+                  <li>The <strong>guaranteed</strong> best price on the web for each product listing.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module-medium" id="matching">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Matching</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <p>Ensuring a system to maintain our product catalog was essential. It began with a series of functions, including:</p>
+                <ul>
+                  <li>Product scraping or API retrieval for each retailer</li>
+                  <li>Word analysis for common brand and model retrieval</li>
+                  <li>Match ruling based on brand-specific analysis</li>
+                  <li>Product cleansing via Human Intelligence Tasks</li>
+                  <li>One unified product listing for each brand and manufacturer</li>
+                </ul>
+                <br/><p>The resulting JSON object for a given product consisted of:</p>
+                <pre class="prettyprint lang-basic">
+{
+  product_id: 12345
+  product_type: guitar
+  ...
+}
+</pre>
+              <p></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module"  data-background="assets/images/pricing_bg.jpg">
+          <div class="container">
+            <h2 class="module-title font-alt">The Product</h2>
+          <div class="row multi-columns-row">
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="price-table font-alt">
+                  <h4>Basic</h4>
+                  <div class="borderline"></div>
+                  <p class="price"><span>$</span>990
+                  </p>
+                  <ul class="price-details">
+                    <li>Free Support</li>
+                    <li>1500+ Products</li>
+                    <li>Pricing for retailers</li>
+                    <li><span>Regular Pricing Updates</span></li>
+                    <li><span>Real-time matching</span></li>
+                  </ul><a class="btn btn-d btn-round" href="mailto:support@endlesstone.com">Sign Up</a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="price-table font-alt best">
+                  <h4>Advanced</h4>
+                  <p class="small">Best Choice</p>
+                  <div class="borderline"></div>
+                  <p class="price"><span>$</span>2,290
+                  </p>
+                  <ul class="price-details">
+                    <li>Free Support</li>
+                    <li>1500+ Products</li>
+                    <li>Pricing for retailers</li>
+                    <li>Regular Pricing Updates</li>
+                    <li><span>Real-time Matching</span></li>
+                  </ul><a class="btn btn-d btn-round" href="mailto:support@endlesstone.com">Sign Up</a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="price-table font-alt">
+                  <h4>Ultimate</h4>
+                  <div class="borderline"></div>
+                  <p class="price"><span>$</span>5,790
+                  </p>
+                  <ul class="price-details">
+                    <li>Free Support</li>
+                    <li>1500+ Products</li>
+                    <li>Pricing for retailers</li>
+                    <li>Retular Pricing Updates</li>
+                    <li>Real-time Matching</li>
+                  </ul><a class="btn btn-d btn-round" href="mailto:support@endlesstone.com">Sign Up</a>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-40">
+              <div class="col-sm-6 col-sm-offset-3 align-center">
+                <p>Pricing is billed each quarter and does not take into account local taxes. Additional details and options available. Sign up for more details.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module-medium" id="resources">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Further Understanding</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                  <p>The program is broken into several components. A small processing example can be found on Github. Here you will find:</p>
+                  <ul>
+                    <li><a href="https://github.com/">scrape.js</a> - Our initial processing script for accessing a retailer's API.</li>
+                    <li><a href="https://github.com/">link</a> - Algorithms pertaining to our initial matching routine.</li>
+                    <li><a href="https://github.com/">link</a> - A series of Angular views for quick integration.</li>
+                    <li><a href="https://github.com/">link</a> - something else novel.</li>
+                  </ul>
+                  <p>If you have any questions or input please do not hesitate to email<a href="mailto:info@endlesstone.com"> info@endlesstone.com</a>.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module-medium" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">The Business</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <p>Endless Tone, Inc. was founded by <a href="https://deankroker.com">Dean Kroker</a>, <a href="https://github.com/don4of4">Donald Scott</a> and <a href="https://www.davlyn.com/about/">Joel Lukoff</a> in 2014. It began as a project to match musicians to instruments.</p>
+                
+                <pre class="prettyprint lang-js">
+</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module bg-dark-60" data-background="assets/images/section-6.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="video-box">
+                  <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?"><span class="icon-video"></span></a></div>
+                  <div class="video-title font-alt">To the musician</div>
+                  <div class="video-subtitle font-alt">Watch the sketch about our past product and view photos below. Share with us your feedback, comments, and criticism via <a href="mailto:support@endlesstone.com">support@endlesstone.com</a>.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module-medium" id="images">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 col-sm-offset-3">
+                    <h2 class="module-title font-alt">Gallery</h2>
+                    <div class="module-subtitle font-serif">Endless Tone has been in flight since 2012. Explore our features throughout the product'<script></script> journey.</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="alt-features-item">
+                      <div class="alt-features-icon"><span class="icon-strategy"></span></div>
+                      <h3 class="alt-features-title font-alt">Brand awareness</h3>We provide robust product information for businesses and consumers.
+                    </div>
+                    <div class="alt-features-item">
+                      <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
+                      <h3 class="alt-features-title font-alt">Development experience</h3>Our mature team of engineers help integrate our data and yours.
+                    </div>
+                    <div class="alt-features-item">
+                      <div class="alt-features-icon"><span class="icon-target"></span></div>
+                      <h3 class="alt-features-title font-alt">Customer understanding</h3>Your customer's interests start with the products we all know and love.
+                    </div>
+                    <div class="alt-features-item">
+                      <div class="alt-features-icon"><span class="icon-tools"></span></div>
+                      <h3 class="alt-features-title font-alt">Customer understanding</h3>Your customer's interests start with the products we all know and love.
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 hidden-xs hidden-sm">
+                    <div class="alt-services-image align-center"><img src="assets/images/promo.png" alt="Feature Image"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="alt-features-item">
+                      <div class="alt-features-icon"><span class="icon-camera"></span></div>
+                      <h3 class="alt-features-title font-alt">Customer understanding</h3>Your customer's interests start with the products we all know and love.
+                    </div>
+                    <div class="alt-features-item">
+                      <div class="alt-features-icon"><span class="icon-mobile"></span></div>
+                      <h3 class="alt-features-title font-alt">Customer understanding</h3>Your customer's interests start with the products we all know and love.
+                    </div>
+                    <div class="alt-features-item">
+                      <div class="alt-features-icon"><span class="icon-linegraph"></span></div>
+                      <h3 class="alt-features-title font-alt">Customer understanding</h3>Your customer's interests start with the products we all know and love.
+                    </div>
+                    <div class="alt-features-item">
+                      <div class="alt-features-icon"><span class="icon-basket"></span></div>
+                      <h3 class="alt-features-title font-alt">Customer understanding</h3>Your customer's interests start with the products we all know and love.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+      <script src="assets/lib/prettify.js"></script>
+      <script>
+        !function ($) {
+            $(function () {
+                window.prettyPrint && prettyPrint()
+            })s
+        }(jQuery)
+      </script>
+    </main>
+    <!--  
+    JavaScripts
+    =============================================
+    -->
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script src="assets/lib/prettify.js"></script>
+    <script>
+      !function ($) {
+          $(function () {
+              window.prettyPrint && prettyPrint()
+          })
+      }(jQuery)
+    </script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
