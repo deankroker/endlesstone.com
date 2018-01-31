@@ -1,4 +1,5 @@
 /* DARK GRAY: #262228 */
+/* LIGHT GRAY: #262228 */
 /* BLUE 1: #0375b4 */
 
 body {
@@ -10,7 +11,7 @@ body {
 
 h1 {
   font-size: 45pt;
-  font-weight: bold;
+  font-weight: 500;
 }
 img {
   width: 100%;
@@ -18,11 +19,12 @@ img {
 .blue1 {
   color: #0375b4;
 }
-
 .dark-gray {
   color: #262228;
 }
-
+.white {
+  color: #ffffff;
+}
 .subtitle {
   font-size: 21pt;
 }
@@ -32,8 +34,8 @@ img {
   margin-right: auto;
 }
 .content {
-  width: 80%;
-  min-width: 400px;
+  width: 90%;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
@@ -86,18 +88,74 @@ img {
 
 
 #made-for-music {
-  min-height: 80vh;
-  
+  min-height: 80vh; 
 }
 
 #made-for-music .content {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
+#music-header {
+  margin-bottom: 20px;
+}
 #icon-items {
-  margin: 100px 0px;;
+  margin: 60px 0px;
 }
 .icon-item {
+  margin: 40px 0px;
+  height: 20px;
+}
+.icon {
+  height: 30px;
+  width: 25px;
+  float: left;
+  margin-right: 20px;
+}
+
+#our-story {
+ background-color: #262228;
+ min-height: 80vh; 
+}
+
+#our-story .content {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#our-story h1 {
+  margin-bottom: 20px;
+}
+
+.team-boxes{
+  margin-top: 60px;
+}
+
+.team-box {
+  text-align: center;
   margin: 20px 0px;
+}
+
+.team-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+#contact-us {
+  background-color: #0375b4;
+  min-height: 40vh;
+}
+
+#contact-us .content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footer .content {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
