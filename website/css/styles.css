@@ -162,3 +162,150 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+
+body{
+  font-family: 'Varela Round', sans-serif;
+}
+.chart-container{
+  position: relative;
+  height:40vh;
+  width:80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+#browserImage{
+  position: absolute;
+  width: 90vw;
+  margin-left: 5vw;
+  top: 0px;
+}
+.chart-header{
+  margin-top: 10vh;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+#modelName{
+  text-align: center;
+/*  font-weight: bold;*/
+  font-family: cursive;
+  font-size: 2em;
+  color: #444;
+
+}
+
+#progressHolder{
+  margin: 15px 0px;
+  border: 1px solid #ddd;
+  height: 2px;
+  border-radius: 20px;
+}
+#progressIndicator{
+  width: 0%;
+  background-color: rgba(54, 162, 235,1);
+  height: 2px;
+  border-radius: 20px;
+  animation-duration: 3s;
+  animation-name: showProgress;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes showProgress{
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+.scaleIn{
+  transform-origin: center;
+  animation-duration: 1s;
+  animation-name: scaleIn;
+  animation-timing-function: ease-in-out;
+}
+@keyframes scaleIn{
+  0%{
+    -webkit-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
+  }
+  100%{
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.movePath{
+  animation: movePath 5s infinite reverse linear, fadeIn 2s ease-in;
+  transform-origin: center;
+}
+@keyframes movePath{
+  to {
+    stroke-dashoffset: 120;
+  }
+}
+.animated{
+  transform-origin: center;
+}
+
+#guitar{
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+.wipeIn{
+  animation: wipeIn;
+  animation-duration: 1s;
+  transform-origin: left;
+  animation-timing-function: ease-in-out;
+}
+@keyframes wipeIn {
+  0%{
+    -webkit-transform: scale3d(0, 1, 1);
+    transform: scale3d(0, 1, 1);
+  }
+  100%{
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100%{
+    opacity 1;
+  }
+}
+
+.hero{
+  padding-top: 40px;
+ /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.hero h1{
+  text-align: center;
+  font-style: italic;
+/*  font-weight: bold;*/
+  margin: 40px 0px;
+  font-size: 2.5em;
+}
+#etDiagram{
+  width: 80vw;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
