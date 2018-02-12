@@ -4,12 +4,20 @@
 <head>
   <meta charset="utf-8">
 
-  <title></title>
+  <title>Endless Tone</title>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  
+  <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+  <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' /> 
+  <script src='unitegallery/themes/tiles/ug-theme-tiles.js' type='text/javascript'></script>
+  <script type='text/javascript' src='unitegallery/themes/default/ug-theme-default.js'></script> 
+  <link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' /> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -53,7 +61,7 @@
   <div class="content row align-items-center">
     <div class="col-md-5">
       <h1 class="blue1" id="music-header">Made for <span class="dark-gray">Music</span>.</h1>
-      <p class="paragraph">Endless Tone is an advanced instrument knowledge engine, extracting critical data and trends wherever instruments are sold.</p>
+      <p class="paragraph">Endless Tone compares trends in the instrument market. We analyze price, specifications, and products across numerous retailers.</p>
       <div id="icon-items">
         <div class="icon-item"><img src="img/icon-path.svg" class="icon" /><div class="icon-text">Match all models across different retailers, conditions, &amp; prices</div></div>
         <div class="icon-item"><img src="img/icon-graph.svg" class="icon" /><div class="icon-text">Our artificial intelligence collects and analyzes pricing automatically</div></div>
@@ -287,10 +295,38 @@
     <h1>Our Story.</h1>
     <p class="paragraph">Endless Tone started in 2011 as a platform helping instrument buyers make better, more informed purchases. It became clear that the insights gathered by Endless Tone regarding online instrument and music product pricing, purchasing, and consumer data was a vital need for instrument manufacturers in the 21st century.</p>
     
-    <div class="row team-boxes">
+    <div class="row team-boxes" style="display: none;">
       <div class="col-md-4 team-box"><div class="team-photo"></div>Dean</div>
       <div class="col-md-4 team-box"><div class="team-photo"></div>Dean</div>
       <div class="col-md-4 team-box"><div class="team-photo"></div>Dean</div>
+    </div>
+    
+    <div id="gallery" style="display:none;">
+
+    <img alt="Musician Profiles" src="img/product-screenshots/customer.png"
+        data-image="img/product-screenshots/customer.png"
+        data-description="Musician Profiles">
+    <img alt="Endless Tone Homepage Circa 2015" src="img/product-screenshots/homepage.png"
+        data-image="img/product-screenshots/homepage.png"
+        data-description="Endless Tone Homepage Circa 2015">
+    <img alt="Guitar Catalog" src="img/product-screenshots/product-catalog.png"
+        data-image="img/product-screenshots/product-catalog.png"
+        data-description="Guitar Catalog">
+    <img alt="Instrument Details" src="img/product-screenshots/product-details.png"
+        data-image="img/product-screenshots/product-details.png"
+        data-description="Instrument Details">
+
+    <img alt="Questions and Answers" src="img/product-screenshots/q-a.jpg"
+        data-image="img/product-screenshots/q-a.jpg"
+        data-description="Questions and Answers">
+    <img alt="Instrument Details" src="img/product-screenshots/quick-glance.png"
+        data-image="img/product-screenshots/quick-glance.png"
+        data-description="Instrument Details">
+    <img alt="Instant Searching" src="img/product-screenshots/search.png"
+        data-image="img/product-screenshots/search.png"
+        data-description="Instant Searching">
+
+
     </div>
   </div>
 </section>
@@ -298,6 +334,17 @@
 <section id="contact-us">
   <div class="content white">
     <h1>Get In Touch.</h1>
+    
+<!--
+    <div class="row contact-form">
+      <div class="col-md-6">
+        <input type="text" class="form text" name="name" placeholder="Your Name">
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form text" name="email" placeholder="Your Email">
+      </div>
+    </div>
+-->
   </div>
 </section>
 
@@ -307,10 +354,7 @@
   </div>
 </section>
 
-<script
-  src="http://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
+
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/bootstrap.min.js"></script>
