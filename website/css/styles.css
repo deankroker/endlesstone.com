@@ -164,9 +164,7 @@ img {
 }
 
 
-body{
-  font-family: 'Varela Round', sans-serif;
-}
+
 .chart-container{
   position: relative;
   height:40vh;
@@ -227,7 +225,12 @@ body{
     opacity: 0;
   }
 }
-
+#svg-holder{
+  display: none;
+}
+.show-item{
+  display: block !important;
+}
 .scaleIn{
   transform-origin: center;
   animation-duration: 1s;
@@ -292,7 +295,7 @@ body{
   }
 }
 
-.hero{
+.hero2{
   padding-top: 40px;
  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
