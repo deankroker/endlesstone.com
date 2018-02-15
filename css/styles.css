@@ -48,7 +48,9 @@ img {
 }
 
 #hero {
-  background-image: url(../img/heroPattern.png);
+  background-image: url(../img/heroPattern2.png);
+  background-attachment: fixed;
+  
   height: 80vh;
 }
 
@@ -137,7 +139,8 @@ img {
 #our-story {
 /* background-color: #262228;*/
   background: url('../img/1x/triangles-bg.png');
- min-height: 80vh; 
+  background-attachment: fixed;
+  min-height: 80vh; 
 }
 
 #our-story .content {
