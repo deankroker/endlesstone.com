@@ -1,5 +1,5 @@
-AOS.init();
 $(document).ready(function(){ 
+  AOS.init();
   $("#gallery").unitegallery({
     gallery_theme: "tiles",
     tiles_type:"justified"

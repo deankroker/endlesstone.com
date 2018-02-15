@@ -81,9 +81,31 @@ img {
 
 #watch-video {
   width: 230px;
-  height: 100px;
+  padding: 20px 20px;
   background-color: white;
   margin-top: 60px;
+  color: black;
+  font-size: 0.8em;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+#watch-video:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  border: 2px solid #0375b4;
+}
+#watch-video:hover img{
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+#watch-video img{
+  width: 90px;
+  border: 1px solid black;
+  margin-right: 10px;
+  float: left;
+  transition: 0.3s;
+}
+#video-text {
+  padding: 10px 0px;;
 }
 
 
@@ -159,7 +181,55 @@ img {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.form.message {
+  resize: none;
+}
+.form {
+  margin-top: 20px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid gray;
+  color: white;
+}
+.form:focus {
+  border-bottom-color: white;
+  color: white;
+}
 
+.form:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+.form:focus::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+.form:focus:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+.form:focus:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+.submitButton{
+  display: inline-block;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  border: 3px solid gray;
+  border-radius: 4px;
+/*  color: #0375b4;*/
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.2s;
+}
+.submitButton:hover{
+  cursor: pointer;
+  background-color: #0375b4;
+  border-color: #0375b4;
+  color: white;
+  border-radius: 30px;
+}
 #footer .content {
   padding-top: 10px;
   padding-bottom: 10px;
