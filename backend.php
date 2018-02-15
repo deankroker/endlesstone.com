@@ -1,7 +1,7 @@
 <?php
 	if(!empty($_POST['email']))
 	{
-		$to="hello@deankroker.com";
+		$to="hello@endlesstone.com";
 		$email = $_POST['email'];
 		$name = $_POST['name'];
 		$subject = "New Contact From $name";
