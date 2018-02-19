@@ -19,6 +19,18 @@ img {
 .blue1 {
   color: #0375b4;
 }
+.number {
+  color: #29abe2;
+  font-weight: bold;
+}
+.boolean {
+  color: yellow;
+  font-weight: bold;
+}
+.string {
+  color: orange;
+  font-weight: bold;
+}
 .dark-gray {
   color: #262228;
 }
@@ -67,7 +79,9 @@ img {
 
 #collect-data {
   min-height: 80vh;
-  background: linear-gradient(119.72deg, rgba(3, 117, 180, 1) 0%, rgba(33, 67, 180, 1) 100%);
+/*  background: linear-gradient(119.72deg, rgba(3, 117, 180, 1) 0%, rgba(33, 67, 180, 1) 100%);*/
+  background-image: url("../img/circles-bg.png");
+  background-attachment: fixed;
   color: white;
 }
 #collect-data .content {
