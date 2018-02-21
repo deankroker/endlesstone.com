@@ -77,7 +77,26 @@ $(document).ready(function(){
         $('#svg-holder').addClass("show-item");
         $(this).off("scroll");
     }
+  });
+  
+  
+  var iframe = $("#vimeoVideo");
+  var player = new Vimeo.Player(iframe);
+  var hideModal = function(){
+    player.pause();
+  }
+  
+  $("#pauseVid").click(function(){
+    player.pause();
   })
+  
+  $("#videoModal").on('hidden.bs.modal', function(){
+    player.pause();
+  });
+  $("#videoModal").on("show.bs.modal", function(){
+    player.play();
+  })
+  
 }); 
 
 // Syntax highlight for JSON data

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   
+  <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
   <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
@@ -392,9 +393,10 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <iframe src="https://player.vimeo.com/video/118662814" width="100%" height="360" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe id="vimeoVideo" src="https://player.vimeo.com/video/118662814" width="100%" height="360" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
       <div class="modal-footer">
+<!--      <button id="pauseVid" class="btn btn-secondary">Pause</button>-->
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
