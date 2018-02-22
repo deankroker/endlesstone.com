@@ -115,8 +115,8 @@ $(document).ready(function(){
           alert("Sorry! There was an error sending your message. Please try again later.");
         }
       }
-    )};
-  })
+    });
+  });
   
 }); 
 
