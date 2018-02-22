@@ -369,16 +369,19 @@
     
     <div class="row contact-form">
       <div class="col-md-6">
-        <input type="text" class="form text" name="name" placeholder="Your Name">
+        <input type="text" class="form text" name="name" placeholder="Your Name" id="name">
       </div>
       <div class="col-md-6">
-        <input type="email" class="form text" name="email" placeholder="Your Email">
+        <input type="email" class="form text" name="email" placeholder="Your Email" id="email">
       </div>
       <div class="col-md-12">
         <textarea class="form message" name="message" placeholder="Message" id="message"></textarea>
       </div>
     </div>
-    <div align="center"><div class="submitButton">Submit</div></div>
+    <div align="center"><div class="submitButton" id="submitButton">Submit</div>
+    <br />
+    <div style="display:none;" id="formResponse"></div>
+    </div>
   </div>
 </section>
 

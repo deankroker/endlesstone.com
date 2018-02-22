@@ -97,6 +97,27 @@ $(document).ready(function(){
     player.play();
   })
   
+  
+  $("#submitButton").click(function(){
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+    
+    $.ajax({
+      type: "POST",
+      url: "backend.php",
+      data: {name: name,email: email,message: message},
+      dataType: "json",
+      success: function(data){
+        if(data==1) {
+          $("#formResponse").html("Thanks! Someone will be in touch soon.");
+        } else {
+          alert("Sorry! There was an error sending your message. Please try again later.");
+        }
+      }
+    )};
+  })
+  
 }); 
 
 // Syntax highlight for JSON data
