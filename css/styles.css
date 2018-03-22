@@ -71,6 +71,7 @@ img {
 #hero .cta{
   margin-top: 20px;
 }
+
 #heroSubtitle {
   max-width: 400px;
 }
@@ -437,6 +438,11 @@ img {
   text-decoration: none;
   color: white !important;
   
+}
+
+.cta.dark{
+  background-color: #2196f3;
+  color: white;
 }
 /* The switch - the box around the slider */
 .switch {
