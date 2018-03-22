@@ -47,7 +47,6 @@ $(document).ready(function(){
       
     } else {
       $("#svg-holder").addClass("show-item");
-      console.log("HERE");
     }
   });
   
@@ -65,7 +64,6 @@ $(document).ready(function(){
   
   // Bind to window scroll to trigger flowchart animation
   $(window).scroll(function() {
-    console.log($(window).scrollTop());
     var topDivHeight = $("#made-for-music").height();
     var viewPortSize = $(window).height();
 
@@ -73,7 +71,6 @@ $(document).ready(function(){
     var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
     console.log(triggerHeight);
     if ($(window).scrollTop() >= triggerHeight) {
-        console.log("SHOWING");
         $('#svg-holder').addClass("show-item");
         $(this).off("scroll");
     }
@@ -110,7 +107,7 @@ $(document).ready(function(){
       dataType: "json",
       success: function(data){
 	    console.log(data);
-        if(data==1) {
+        if(data=="Congratulations! You've fired the form_submitted event") {
           $("#formResponse").html("Thanks! Someone will be in touch soon.");
         } else {
           alert("Sorry! There was an error sending your message. Please try again later.");

@@ -13,7 +13,7 @@
         $data_string = json_encode($data);
 		
 		$ch = curl_init("https://maker.ifttt.com/trigger/form_submitted/with/key/cGOWs6Ut6i3rlsz5mqDYRE");
-		curl_setopt($ch, CURLOPT_CUSTOMREQUREST, "POST");
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
