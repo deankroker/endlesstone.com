@@ -414,12 +414,27 @@ img {
   font-size: 2.5em;
 }
 #etDiagram{
-  width: 100%;;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-
+.cta{
+  border: 2px solid #2196F3;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  transition: 0.1s;
+  text-decoration: none;
+}
+.cta:hover{
+  cursor: pointer;
+  background-color: #2196F3;
+  text-decoration: none;
+  color: white !important;
+  
+}
 /* The switch - the box around the slider */
 .switch {
   position: relative;
