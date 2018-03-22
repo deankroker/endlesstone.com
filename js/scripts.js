@@ -94,27 +94,33 @@ $(document).ready(function(){
     player.play();
   })
   
+  var submitted = false;
   
   $("#submitButton").click(function(){
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
     
-    $.ajax({
-      type: "POST",
-      url: "backend.php",
-      data: {name: name,email: email,message: message},
-      success: function(data){
-	    console.log(data);
-        if(data=="Congratulations! You've fired the form_submitted event") {
-//           $("#formResponse").html("Thanks! Someone will be in touch soon.");
-			$("#submitButton").html("Submitted");
-			$("#submitButton").prop("disabled", true);
-        } else {
-          alert("Sorry! There was an error sending your message. Please try again later.");
-        }
-      }
-    });
+    if(!submitted){
+		$.ajax({
+	      type: "POST",
+	      url: "backend.php",
+	      data: {name: name,email: email,message: message},
+	      success: function(data){
+		    console.log(data);
+	        if(data=="Congratulations! You've fired the form_submitted event") {
+	//           $("#formResponse").html("Thanks! Someone will be in touch soon.");
+				$("#submitButton").html("Submitted!");
+				$("#submitButton").attr("disabled", true);
+				$("#contactForm").hide();
+				submitted = true;
+	        } else {
+	          alert("Sorry! There was an error sending your message. Please try again later.");
+	        }
+	      }
+	    });
+    }
+
   });
   
 }); 
