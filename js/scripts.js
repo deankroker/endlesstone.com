@@ -107,7 +107,9 @@ $(document).ready(function(){
       success: function(data){
 	    console.log(data);
         if(data=="Congratulations! You've fired the form_submitted event") {
-          $("#formResponse").html("Thanks! Someone will be in touch soon.");
+//           $("#formResponse").html("Thanks! Someone will be in touch soon.");
+			$("#submitButton").html("Submitted");
+			$("#submitButton").prop("disabled", true);
         } else {
           alert("Sorry! There was an error sending your message. Please try again later.");
         }
