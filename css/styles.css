@@ -68,6 +68,9 @@ img {
   widows: 3;
   orphans: 3;
 }
+#hero .cta{
+  margin-top: 20px;
+}
 #heroSubtitle {
   max-width: 400px;
 }
