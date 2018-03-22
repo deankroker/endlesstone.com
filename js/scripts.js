@@ -109,6 +109,7 @@ $(document).ready(function(){
       data: {name: name,email: email,message: message},
       dataType: "json",
       success: function(data){
+	    console.log(data);
         if(data==1) {
           $("#formResponse").html("Thanks! Someone will be in touch soon.");
         } else {
