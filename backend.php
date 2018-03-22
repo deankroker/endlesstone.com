@@ -18,7 +18,7 @@
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
 		    'Content-Type: application/json'                                                                                                                                       
-		);                                                                                                                   
+		));                                                                                                                   
 		
 				                                                                                                                     
 		$result = curl_exec($ch);
