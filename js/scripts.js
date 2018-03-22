@@ -104,7 +104,6 @@ $(document).ready(function(){
       type: "POST",
       url: "backend.php",
       data: {name: name,email: email,message: message},
-      dataType: "json",
       success: function(data){
 	    console.log(data);
         if(data=="Congratulations! You've fired the form_submitted event") {
