@@ -114,7 +114,9 @@ $(document).ready(function(){
 				$("#submitButton").attr("disabled", true);
 				$("#contactForm").hide();
 				submitted = true;
-	        } else {
+	        } else if(data=="Invalid email"){
+				$("#submitButton").html("Invalid Email. Try Again.");
+		    } else {
 	          alert("Sorry! There was an error sending your message. Please try again later.");
 	        }
 	      }
